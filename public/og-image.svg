@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Sheetora — Bank Statements In. Excel Out.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3563e9"/>
+      <stop offset="1" stop-color="#5b8def"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Logo mark: document -> arrow -> spreadsheet -->
+  <g transform="translate(96 150)">
+    <rect x="0" y="0" width="120" height="150" rx="14" fill="#ffffff" opacity="0.95"/>
+    <rect x="20" y="26" width="80" height="12" rx="6" fill="#94a3b8"/>
+    <rect x="20" y="52" width="80" height="12" rx="6" fill="#cbd5e1"/>
+    <rect x="20" y="78" width="60" height="12" rx="6" fill="#cbd5e1"/>
+
+    <path d="M170 75 h70 M240 75 l-16 -14 M240 75 l-16 14" fill="none" stroke="url(#accent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(280 0)">
+      <rect x="0" y="0" width="150" height="150" rx="14" fill="#16a34a"/>
+      <rect x="16" y="18" width="118" height="26" rx="5" fill="#ffffff" opacity="0.92"/>
+      <rect x="16" y="52" width="54" height="26" rx="5" fill="#ffffff" opacity="0.55"/>
+      <rect x="80" y="52" width="54" height="26" rx="5" fill="#ffffff" opacity="0.55"/>
+      <rect x="16" y="86" width="54" height="26" rx="5" fill="#ffffff" opacity="0.55"/>
+      <rect x="80" y="86" width="54" height="26" rx="5" fill="#ffffff" opacity="0.55"/>
+    </g>
+  </g>
+
+  <text x="96" y="400" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="800" fill="#ffffff">Sheetora</text>
+  <text x="96" y="470" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="600" fill="#5b8def">Bank Statements In. Excel Out.</text>
+  <text x="96" y="530" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="400" fill="#cbd5e1">Convert PDF &amp; image statements to clean Excel — 100% in your browser.</text>
+</svg>
