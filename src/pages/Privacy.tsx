@@ -1,4 +1,5 @@
 import Seo from '../components/Seo'
+import { AdSlotMiddle, AdSlotBottom } from '../components/AdSlot'
 
 const sections = [
   {
@@ -46,7 +47,7 @@ export default function Privacy() {
           <p className="mt-2 text-sm text-ink-400">Last updated: 2026</p>
 
           <div className="mt-8 space-y-8">
-            {sections.map((s) => (
+            {sections.slice(0, 4).map((s) => (
               <div key={s.h}>
                 <h2 className="text-xl font-bold">{s.h}</h2>
                 <p className="mt-2 text-ink-600">{s.p}</p>
@@ -55,6 +56,23 @@ export default function Privacy() {
           </div>
         </div>
       </section>
+
+      <AdSlotMiddle />
+
+      <section className="container-page">
+        <div className="mx-auto max-w-3xl">
+          <div className="space-y-8">
+            {sections.slice(4).map((s) => (
+              <div key={s.h}>
+                <h2 className="text-xl font-bold">{s.h}</h2>
+                <p className="mt-2 text-ink-600">{s.p}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <AdSlotBottom />
     </>
   )
 }

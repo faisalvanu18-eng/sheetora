@@ -1,6 +1,6 @@
 import Seo from '../components/Seo'
 import FaqAccordion, { type FaqItem } from '../components/FaqAccordion'
-import { AdSlotMiddle } from '../components/AdSlot'
+import { AdSlotTop, AdSlotMiddle } from '../components/AdSlot'
 import { SITE } from '../constants'
 
 const FAQS: FaqItem[] = [
@@ -58,8 +58,12 @@ export default function Faq() {
             Everything you might want to know about {SITE.name}.
           </p>
         </div>
+      </section>
 
-        <div className="mx-auto mt-10 max-w-3xl">
+      <AdSlotTop />
+
+      <section className="container-page">
+        <div className="mx-auto max-w-3xl">
           <FaqAccordion items={FAQS} />
         </div>
       </section>

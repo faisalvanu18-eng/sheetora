@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { FileUp } from 'lucide-react'
 import Seo from '../components/Seo'
-import { AdSlotMiddle, AdSlotBottom } from '../components/AdSlot'
+import { AdSlotTop, AdSlotMiddle, AdSlotBottom } from '../components/AdSlot'
 import FaqAccordion, { type FaqItem } from '../components/FaqAccordion'
 
 export interface ContentBlock {
@@ -64,7 +64,7 @@ export default function LandingLayout({
         </div>
       </section>
 
-      <AdSlotMiddle />
+      <AdSlotTop />
 
       <section className="container-page py-8">
         <div className="mx-auto max-w-3xl space-y-10">
@@ -74,12 +74,16 @@ export default function LandingLayout({
               <p className="mt-2 text-ink-600">{b.body}</p>
             </div>
           ))}
+        </div>
+      </section>
 
-          <div>
-            <h2 className="text-2xl font-bold">Frequently Asked Questions</h2>
-            <div className="mt-4">
-              <FaqAccordion items={faqs} />
-            </div>
+      <AdSlotMiddle />
+
+      <section className="container-page py-8">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold">Frequently Asked Questions</h2>
+          <div className="mt-4">
+            <FaqAccordion items={faqs} />
           </div>
         </div>
       </section>

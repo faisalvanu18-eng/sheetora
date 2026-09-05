@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { FileUp, ScanText, ListChecks, FileSpreadsheet } from 'lucide-react'
 import Seo from '../components/Seo'
-import { AdSlotMiddle } from '../components/AdSlot'
+import { AdSlotTop, AdSlotMiddle } from '../components/AdSlot'
 
 const steps = [
   {
@@ -43,8 +43,12 @@ export default function HowItWorks() {
             bank statement.
           </p>
         </div>
+      </section>
 
-        <div className="mx-auto mt-10 max-w-3xl space-y-4">
+      <AdSlotTop />
+
+      <section className="container-page">
+        <div className="mx-auto max-w-3xl space-y-4">
           {steps.map(({ icon: Icon, title, body }) => (
             <div key={title} className="card flex gap-4 p-5">
               <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600">
