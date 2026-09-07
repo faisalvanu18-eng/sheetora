@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sheetora.com/sitemap.xml
+Sitemap: https://sheetora.online/sitemap.xml

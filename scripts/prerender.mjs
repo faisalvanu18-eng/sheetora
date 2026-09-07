@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const DIST = join(__dirname, '..', 'dist')
-const SITE_URL = 'https://sheetora.com'
+const SITE_URL = 'https://sheetora.online'
 const OG_IMAGE = `${SITE_URL}/og-image.png`
 
 /** route path -> { title, description }. Keep in sync with each page's <Seo>. */

@@ -3,7 +3,7 @@ import type { BankProcessingStageId, BankExcelFormat, ExcelFormat, ProcessingSta
 export const SITE = {
   name: 'Sheetora',
   tagline: 'Bank Statements In. Excel Out.',
-  url: 'https://sheetora.com',
+  url: 'https://sheetora.online',
   maxFileSizeMB: 10,
   maxStatementSizeMB: 50,
 } as const
